@@ -1,14 +1,13 @@
-import { useState, useEffect } from "react";
-import { tasks as data } from "./tasks";
+// import { useState, useEffect } from "react";
 
-console.log(data);
+// console.log(data);
 
-function TaskList() {
-  const [tasks, setTasks] = useState(data);
+function TaskList({tasks}) {
+//   const [tasks, setTasks] = useState(data);
 
-  useEffect(() => {
-    setTasks(data)
-  }, [])
+//   useEffect(() => {
+//     setTasks(data)
+//   }, [])
   
 
   if (tasks.length === 0) {
