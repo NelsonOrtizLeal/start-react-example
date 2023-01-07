@@ -3,7 +3,7 @@
 
 import TaskCard from "./TaskCard";
 
-function TaskList({ tasks }) {
+function TaskList({ tasks, deleteTask}) {
   //   const [tasks, setTasks] = useState(data);
 
   //   useEffect(() => {
@@ -17,7 +17,7 @@ function TaskList({ tasks }) {
   return (
     <div>
       {tasks.map((task, index) => (
-        <TaskCard task={task} key={index}></TaskCard>
+        <TaskCard task={task} key={index} deleteTask={deleteTask}></TaskCard>
       ))}
     </div>
   );
