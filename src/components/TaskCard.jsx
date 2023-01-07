@@ -1,10 +1,15 @@
-import React from "react";
+import {useContext} from "react";
+import {TaskContext} from '../context/TaskContext'
 
 function TaskCard({task, deleteTask}) {
 
   // function deleteTask(id){
   //   console.log("Eliminando...", id);
   // }
+
+  // Llamando un contexto
+  const valorX = useContext(TaskContext); // puedes tener varios contextos -> asi que indica cual quieres usar
+  console.log(valorX);
 
   return (
     <div>
